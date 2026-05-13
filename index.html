@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="fr-arb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PneumoniaAI-Pneumonia Detection</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="http://fonts.googleapis.com" />
+    <link rel="preconnect" href="http://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--HEADER section-->
+    <header id="header">
+      <div class="header-container">
+        <div class="logo-container">
+          <div class="logo">
+            <i class="fa-solid fa-lungs"></i>
+            <span>PneumoniaAI</span>
+          </div>
+        </div>
+        <!--navigation section start-->
+        <nav id="nav">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#advantage">Advantage</a></li>
+            <li><a href="#detection">Detection</a></li>
+            <li><a href="#ourteam">Our Team</a></li>
+          </ul>
+        </nav>
+        <!--mobile button-->
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!--MAIN Section-->
+    <main>
+      <!--Banner section-->
+      <section class="banner-section" id="home">
+        <div class="banner-container">
+          <!--Left Side-->
+          <div class="banner-text">
+            <h1 id="typing-text"></h1>
+            <p>
+              get instant AI analysis with a confidence score by AI-powered
+              platform for early pneumonia detection using chest X-ray images
+            </p>
+            <div class="banner-buttons">
+              <!--Upload Button-->
+              <a href="#detection" class="banner-upload-btn">
+                Start Detection
+              </a>
+              <!--learn button-->
+              <a href="#about" class="learn-btn">Learn more</a>
+            </div>
+          </div>
+          <!--Right side-->
+          <div class="banner-image">
+            <div class="analysis-card">
+              <!--image-->
+              <img src="images/lung5.jpg" />
+              <div class="status-row">
+                <span class="status-title"> Analysis Status </span>
+                <span class="status-complete"> Complete </span>
+              </div>
+              <div class="progress-line">
+                <div class="progress-fill"></div>
+              </div>
+              <h3>90% Confidence</h3>
+              <p>Pneumonia Detection</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--about section-->
+      <section class="about-section" id="about">
+        <div class="about-container">
+          <!--left side-->
+          <div class="about-content">
+            <span class="about-subtitle"> About Pneumonia-AI </span>
+            <h2 class="about-title">
+              AI-Powered Pneumonia Detection For Faster Medical Analysis
+            </h2>
+            <p class="about-text">
+              PneumoniaAI is an intelligent medical platform designed to assist
+              in the early detection of pneumonia from chest X-ray images.The
+              dataset used in this project consists of pediatric chest X-ray
+              images collected from children aged approximately 4 to 5 years
+              old. The system is built using advanced deep learning models to
+              ensure accurate and reliable prediction.It aims to support early
+              diagnosis and improve healthcare assistance through AI-based
+              analysis.
+            </p>
+          </div>
+          <!--right side-->
+          <div class="about-image">
+            <img src="images/lung11.jpeg" />
+          </div>
+        </div>
+        <div class="stats-container">
+          <div class="stat-box">
+            <div class="counter percent" data-target="90">0</div>
+            <h4>AI Accuracy</h4>
+          </div>
+          <div class="stat-box">
+            <div class="counter plus" data-target="5000">0</div>
+            <h4>X-Ray Images</h4>
+          </div>
+          <div class="stat-box">
+            <div class="counter hours" data-target="24">0</div>
+            <h4>System 24/7</h4>
+          </div>
+          <div class="stat-box">
+            <div class="counter plus" data-target="2">0</div>
+            <h4>AI Models</h4>
+          </div>
+        </div>
+      </section>
+      <!--advantages of Pneumonia Project Section -->
+      <section class="advantage-section" id="advantage">
+        <div class="advantage-container">
+          <h2 class="advantage-title">Our Advantages</h2>
+          <p class="advantage-text">
+            Why our AI system is reliable for Pneumonia detection
+          </p>
+          <!--cards-->
+          <div class="advantage-cards">
+            <!--card1-->
+            <div class="advantage-card">
+              <i class="fa-solid fa-brain card-icon"></i>
+              <h2 class="title-card">AI-Powered Accuracy</h2>
+              <p class="text-card">
+                High precision detection using deep learning models.
+              </p>
+              <div class="card-bar">
+                <div class="bar-fill progress-95">
+                  <span>90%</span>
+                </div>
+              </div>
+              <div class="card-image">
+                <img src="images\lung7.png" />
+              </div>
+            </div>
+            <!--card2-->
+            <div class="advantage-card">
+              <i class="fa-solid fa-bolt card-icon"></i>
+              <h3 class="title-card">Fast Results</h3>
+              <p class="text-card">
+                Get prediction results quickly and efficiently
+              </p>
+              <div class="card-bar">
+                <div class="bar-fill progress-90">
+                  <span>90%</span>
+                </div>
+              </div>
+              <div class="card-image">
+                <img src="images/lung9.jpeg" />
+              </div>
+            </div>
+            <!--card3-->
+            <div class="advantage-card">
+              <i class="fa-solid fa-shield-heart card-icon"></i>
+              <h3 class="title-card">Reliable System</h3>
+              <p class="text-card">
+                Always available and stable for medical analysis.
+              </p>
+              <div class="card-bar">
+                <div class="bar-fill progress-80">
+                  <span>80%</span>
+                </div>
+              </div>
+              <div class="card-image">
+                <img src="images\lung10.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Detection Section-->
+      <section class="detection-section" id="detection">
+        <div class="detection-container">
+          <h2 class="detection-title">Pneumonia Detection</h2>
+          <div class="detection-content">
+            <!--LEFT SIDE-->
+            <div class="detection-left">
+              <p class="detection-text">
+                Upload your chest X-ray image and let our AI system analyze it
+                using advanced AI models for fast and accurate Pneumonia
+                detection.
+              </p>
+              <p id="uploadStatus" class="upload-status">No image selected</p>
+              <img id="preview" class="preview-img" />
+
+              <!--RESULT BOX-->
+              <div class="prediction-result" id="resultBox">
+                <p id="resultText">No Prediction Yet</p>
+
+                <div class="result-bar">
+                  <div class="result-fill" id="resultFill">
+                    <span id="barStatus"></span>
+                  </div>
+                </div>
+                <div id="adviceBtnContainer">
+                  <button  id="assistantBtn" class="assistant-btn" >
+                    <i class="fa-solid fa-robot"></i>
+                    Get Medical Advice
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--RIGHT SIDE-->
+            <div class="detection-right">
+              <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+              <h3>Upload X-Ray Image</h3>
+              <p class="upload-text">JPG, PNG or JPEG format supported</p>
+
+              <div id="toast" class="toast">
+                Tip: Upload a clear chest X-ray images for better accuracy
+              </div>
+              <input type="file" id="fileInput" accept="image/*" />
+
+              <div class="button-grp">
+                <button onclick="predict('CNN')" class="predict-btn1">
+                  CNN Model
+                </button>
+                <button onclick="predict('EfficientNet')" class="predict-btn2">
+                  EfficientNetB0 Model
+                </button>
+              </div>
+              <div class="loader" id="loader"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--faq section-->
+      <section class="faq-section" id="faq">
+        <div class="faq-wrapper">
+          <!--left side-->
+          <div class="faq-left">
+            <h2>Frequently Asked Questions</h2>
+            <!--faq1-->
+            <div class="faq-item">
+              <button class="faq-question">
+                What image formats are supported ?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  You can upload chest X-ray images in HPG, PNG, or JPEG format.
+                </p>
+              </div>
+            </div>
+            <!--faq2-->
+            <div class="faq-item">
+              <button class="faq-question">
+                Are uploaded images stored permanently ?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  No, uploaded X-ray images are processed securely and are not
+                  permanently stored unless explicity saved by the user.
+                </p>
+              </div>
+            </div>
+            <!--faq3-->
+            <div class="faq-item">
+              <button class="faq-question">
+                How long does analysis take ?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Most analysis are completed in just a few seconds depending on
+                  image size and server response.
+                </p>
+              </div>
+            </div>
+            <!--faq4-->
+            <div class="faq-item">
+              <button class="faq-question">
+                What should I do after receiving a positive result ?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  If the system detects possible pneumonia, we recommend
+                  consulting a healthcare professional for further examination.
+                </p>
+              </div>
+            </div>
+            <!--faq5-->
+            <div class="faq-item">
+              <button class="faq-question">
+                Is my medical information secure ?
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, all uploaded data is processed securely and handled with
+                  privacy protection measures.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--right side-->
+          <div class="faq-right">
+            <h3>Didn't find your question ?</h3>
+            <p>Send here your question and we'll help you.</p>
+            <form class="faq-form" action="https://formsubmit.co/pneumoniaai.support@gmail.com" method="POST">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="New FAQ Question - PneumoniaAI">
+              <input type="text" name="name" placeholder="Your name" />
+              <input type="email" placeholder="Your email" />
+              <textarea placeholder="Your question"></textarea>
+              <button type="submit">Send Question</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!--Our Team Section-->
+      <section class="team-section" id="ourteam">
+        <div class="team-container">
+          <h2 class="team-title">Meet Our Team</h2>
+          <p class="team-text">
+            The people behind PneumoniaAI worked together to build an
+            intelligent medical platform for pneumonia detection using deep
+            learning models.
+          </p>
+          <div class="team-cards">
+            <!--card1-->
+            <div class="team-card">
+              <div class="team-image">
+                <img src="images\team3.jpg" />
+              </div>
+              <h3>Yasmine Bouguellal</h3>
+            </div>
+            <!--card2-->
+            <div class="team-card">
+              <div class="team-image">
+                <img src="images\team2.jpg" />
+              </div>
+              <h3>Fatima Bouzad</h3>
+            </div>
+            <!--card3-->
+            <div class="team-card">
+              <div class="team-image">
+                <img src="images\team1.jpg" />
+              </div>
+              <h3>Alaa haiag</h3>
+            </div>
+            <!--card4-->
+            <div class="team-card">
+              <div class="team-image">
+                <img src="images\team4.jpg" />
+              </div>
+              <h3>Prof S.Achour</h3>
+            </div>
+          </div>
+          <!--team contact box-->
+          <div class="team-contact-box">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h3>Contact Our Team</h3>
+            <p>Have questions about PneumoniaAI or need assistance ?
+              Feel free to contact our team anytime.
+            </p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pneumoniaai.support@gmail.com" class="team-email-btn">
+              pneumoniaai.support@gmail.com
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--footer section-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3 class="brand-name">PneumoniaAI</h3>
+          <p>
+            AI-powered early of pneumonia from chest X-ray images. Fast,
+            accurate, and accessible.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About PneumoniaAI</a></li>
+            <li><a href="#ourteam">Contact Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li>Email: pneumoniaai.support@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 PneumoniaAI | Pneumonia detection. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

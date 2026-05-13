@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr-arb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PneumoniaAI-Advice</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="http://fonts.googleapis.com" />
+    <link rel="preconnect" href="http://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--HEADER section-->
+    <header id="header">
+      <div class="header-container">
+        <div class="logo-container">
+          <div class="logo">
+            <i class="fa-solid fa-lungs"></i>
+            <span>PneumoniaAI</span>
+          </div>
+        </div>
+        <!--navigation section start-->
+        <nav id="nav">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#advantage">Advantage</a></li>
+            <li><a href="index.html#detection">Detection</a></li>
+            <li><a href="index.html#ourteam">Our Team</a></li>
+          </ul>
+        </nav>
+        <a href="index.html" class="back-btn">
+          <i class="fa-solid fa-arrow-left"></i>
+          Back
+        </a>
+        <!--mobile button-->
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!--MAIN Section-->
+    <main class="advice-page">
+      <div class="advice-container">
+        <!--result section-->
+        <section class="result-section">
+          <h2 class="advice-title">
+            <i class="fa-solid fa-microscope"></i>
+            Diagnosis Result
+          </h2>
+          <div class="result-card">
+            <img
+              id="resultImage"
+              src="placeholder.jpg"
+              alt="X-ray"
+              class="result-image"
+            />
+            <div class="result-info">
+              <h3 id="diagnosisResultText">Loading result...</h3>
+              <p id="confidenceText">Confidence: --%</p>
+            </div>
+          </div>
+        </section>
+        <!--chat section-->
+        <section class="chat-section">
+          <h2 class="chat-title">
+            <i class="fa-solid fa-robot"></i> AI Medical assistant
+          </h2>
+          <!--welcome card-->
+          <div class="welcome-card">
+              Welcome! I am here to help you.<br /><br />
+              <strong> Tell me about your symptoms </strong> and i will give you
+              some medical advice for your condition.<br /><br />
+              <strong>This is not a medical diagnosis. Please consult a doctor for confirmation.</strong>
+          </div>
+          <!--chat box-->
+          <div id="chatMessages" class="chat-messages">
+            <!--messages will appear here -->
+          </div>
+          <!--input area-->
+          <div class="chat-input-area">
+            <input
+              type="text"
+              id="chatInput"
+              placeholder="Describe your symptoms or ask a question ..."
+              onkeypress="if (event.key === 'Enter') sendChatMessage();">
+            <button onclick="sendChatMessage()">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!--footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3 class="brand-name">PneumoniaAI</h3>
+          <p>
+            AI-powered early of pneumonia from chest X-ray images. Fast,
+            accurate, and accessible.
+          </p>
+        </div>
+      <div class="footer-bottom">
+        <p>© 2026 PneumoniaAI | Pneumonia detection. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
